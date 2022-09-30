@@ -22,4 +22,7 @@ Il contient les informations des dépendances, à la différence du vendor/ il n
 ```
 La méthode test si la page affiché est bien trouvé (si le code est 200) et si le text contenu dans le <h1> contient bien 'Hello'
 ```
-
+## Question 7
+```
+test si la methode generateRandomName() return un string d'une lenght superieur à 1
+```
