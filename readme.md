@@ -1,42 +1,25 @@
-## Installion et lancement du serveur
+## Question 1
 ```
-cd project
-
-git clone https://github.com/Myogamevideo/starter_sf6.git
-
-docker-compose up -d --build
+Le dossier vendor/ stock les bundles installés pour le projet.
 ```
-
-## Access bash
+## Question 2
 ```
-docker exec -it php8-sf6 bash
+Le dossier public contient tout ce qui sera lu par le navigateur, le CSS de tout le site ainsi que le JS.
 ```
-
-## Start yarn :
+## Question 3
 ```
-docker exec -it php8-sf6 bash
-
-yarn watch
+Pour que Symfony puisse accéder à la BDD, on doit modifier le fichier .env ou .env.local
 ```
-
-## Access 
-- PHPMyAdmin : http://localhost:8080/
-- Website : http://localhost:9000/
-
-DATABASE_URL="mysql://root:password@localhost:3306/cours_symfony?serverVersion=8&charset=utf8mb4"
-
-## IPConfig
-Open powershell
-
+## Question 4
 ```
-ipconfig
+On fait le lien entre une route de l'application et une action d'un contrôleur grâce aux attributs  de PHP et à la class Route de Symfony.
+```
+## Question 5
+```
+Il contient les informations des dépendances, à la différence du vendor/ il ne les stocks pas en physique.
+```
+## Question 6
+```
+La méthode test si la page affiché est bien trouvé (si le code est 200) et si le text contenu dans le <h1> contient bien 'Hello'
 ```
 
-> Adresse IPv4 : 192.168.130.149
-
-# Mailer
-```
-symfony open:local:webmail
-```
-
-> Opened: http://127.0.0.1:58275
